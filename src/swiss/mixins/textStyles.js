@@ -4,28 +4,28 @@ addMixin('textStyle', (style = 'item') => {
   switch (style) {
     case 'body':
       return {
-        _font: ['1rem', '1rem', '$regular']
+        _font: ['18px', '24px', '$regular']
       };
     case 'caption':
       return {
-        _font: ['0.75rem', '1rem', '$medium']
+        _font: ['13px', '24px', '$medium']
       };
     case 'H3':
       return {
-        _font: ['1.25rem', '1rem', '$regular']
+        _font: ['20px', '24px', '$regular']
       };
     case 'H2':
       return {
-        _font: ['1.5rem', '1rem', '$regular']
+        _font: ['24px', '24px', '$regular']
       };
     case 'H1':
       return {
-        _font: ['1.75rem', '2rem', '$regular'],
+        _font: ['28px', '36px', '$regular'],
         letterSpacing: '-0.6px'
       };
     case 'title':
       return {
-        _font: ['3rem', '3.5rem', '$regular'],
+        _font: ['48px', '56px', '$regular'],
         letterSpacing: '-1.5px'
       };
     default:
