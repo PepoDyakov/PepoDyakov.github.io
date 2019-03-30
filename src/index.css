@@ -1,0 +1,34 @@
+*,
+*:after,
+*:before,
+a,
+button,
+canvas,
+g,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+image,
+img,
+input,
+li,
+p,
+path,
+svg,
+ul,
+textarea,
+blockquote {
+  background-color: transparent;
+  border: none;
+  box-sizing: border-box;
+  cursor: default;
+  font-family: "Helvetica; Arial, sans-serif";
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  position: relative;
+}
