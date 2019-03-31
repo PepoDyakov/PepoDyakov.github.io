@@ -4,97 +4,70 @@ import SW from './Landing.swiss.js';
 export default function Landing() {
   return (
     <SW.Wrapper>
-      <SW.Row>
-        <SW.RowTitle>Name</SW.RowTitle>
-        <SW.RowText>Petar Dyakov, a.k.a Decho</SW.RowText>
-      </SW.Row>
-      <SW.Row>
-        <SW.RowTitle>Age</SW.RowTitle>
-        <SW.RowText>23</SW.RowText>
-      </SW.Row>
-      <SW.Row>
-        <SW.RowTitle>From</SW.RowTitle>
-        <SW.RowText>
-          Sofia,
-          <SW.Span role="img" aria-label="Bulgarian flag">
-            🇧🇬
-          </SW.Span>
-        </SW.RowText>
-      </SW.Row>
-      <SW.Row>
-        <SW.RowTitle>Current job</SW.RowTitle>
-        <SW.RowText>
-          Chief Consistency Officer
-          <SW.Link href="https://www.swipesapp.com" color="#05A851">
-            @swipesapp
+      <SW.IntroWrapper>
+        <SW.Title>Hi, I'm Petar Dyakov a.k.a Decho 👋</SW.Title>
+        <SW.Subtitle>
+          I’m a software developer currently living in Sofia, Bulgaria 🇧🇬
+          Currently working as Chief Consistency Officer at{' '}
+          <SW.Link href="https://swipesapp.com" color="green">
+            Swipes
           </SW.Link>
-        </SW.RowText>
-      </SW.Row>
-      <SW.Row>
-        <SW.RowTitle>Currently working on</SW.RowTitle>
-        <SW.RowList>
-          <SW.RowListItem>
-            <SW.RowText>This place</SW.RowText>
-          </SW.RowListItem>
-          <SW.RowListItem>
-            <SW.RowText>
-              Dojohunt -> (Platform for finding gyms in Sofia)
-            </SW.RowText>
-          </SW.RowListItem>
-          <SW.RowListItem>
-            <SW.RowText>
-              <SW.Link href="http://we-are.cc" color="#f0a033">
-                we-are.cc
-              </SW.Link>
-            </SW.RowText>
-          </SW.RowListItem>
-        </SW.RowList>
-      </SW.Row>
-      <SW.Row>
-        <SW.RowTitle>Have worked on</SW.RowTitle>
-        <SW.RowList>
-          <SW.RowListItem>
-            <SW.Link href="https://www.swipesapp.com" color="#05A851">
-              swipesapp.com
-            </SW.Link>
-          </SW.RowListItem>
-          <SW.RowListItem>
-            <SW.Link href="https://jd.dk" color="#ed584e">
-              jd.dk
-            </SW.Link>
-          </SW.RowListItem>
-          <SW.RowListItem>
-            <SW.Link href="https://legalpad.io" color="#374665">
+          . You can follow me on{' '}
+          <SW.Link href="https://twitter.com/petardyakov" color="#55acee">
+            Twitter
+          </SW.Link>
+          , check out my messy code on{' '}
+          <SW.Link href="https://github.com/PepoDyakov" color="black">
+            GitHub
+          </SW.Link>{' '}
+          or double-tap my photos on{' '}
+          <SW.Link href="https://www.instagram.com/pepodyakov/" color="#c13584">
+            Instagram
+          </SW.Link>
+          .
+        </SW.Subtitle>
+      </SW.IntroWrapper>
+      <SW.ContentWrapper>
+        <SW.Column>
+          <SW.Title>Projects I'm working on</SW.Title>
+          <SW.List>
+            <SW.Item>
+              <SW.ItemTitle>Dojohunt</SW.ItemTitle>
+              <SW.ItemText>
+                Improving the way how martial artists discover gyms that are
+                best suitable for them.
+              </SW.ItemText>
+            </SW.Item>
+            <SW.Item>
+              <SW.ItemTitle>we-are.cc</SW.ItemTitle>
+              <SW.ItemText>
+                We form a place where a broad spectrum 🌈 of creatives share
+                their personal and professional experiences ✌️
+              </SW.ItemText>
+            </SW.Item>
+            <SW.Item>
+              <SW.ItemTitle>This place</SW.ItemTitle>
+              <SW.ItemText>
+                A spot where I share my thoughts on different things.
+              </SW.ItemText>
+            </SW.Item>
+          </SW.List>
+        </SW.Column>
+        <SW.Column>
+          <SW.Title>Have worked on</SW.Title>
+          <SW.Item>
+            <SW.Link href="https://legalpad.io" underline>
               legalpad.io
             </SW.Link>
-          </SW.RowListItem>
-        </SW.RowList>
-      </SW.Row>
-      <SW.Row>
-        <SW.RowTitle>Can be reached here</SW.RowTitle>
-        <SW.RowList>
-          <SW.RowListItem>
-            <SW.Link href="mailto:petar.dyakov@icloud.com">Email</SW.Link>
-            <SW.Span role="img" aria-label="mail">
-              ✉️
-            </SW.Span>
-          </SW.RowListItem>
-          <SW.RowListItem>
-            <SW.Link href="https://twitter.com/petardyakov">Twitter</SW.Link>
-            <SW.Span role="img" aria-label="chat">
-              💬
-            </SW.Span>
-          </SW.RowListItem>
-          <SW.RowListItem>
-            <SW.Link href="https://www.instagram.com/pepodyakov/">
-              Instagram
+            <SW.Link href="https://jd.dk" underline>
+              jd.dk
             </SW.Link>
-            <SW.Span role="img" aria-label="camera">
-              📸
-            </SW.Span>
-          </SW.RowListItem>
-        </SW.RowList>
-      </SW.Row>
+            <SW.Link href="https://swipesapp.com" underline>
+              swipesapp.com
+            </SW.Link>
+          </SW.Item>
+        </SW.Column>
+      </SW.ContentWrapper>
     </SW.Wrapper>
   );
 }

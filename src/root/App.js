@@ -5,6 +5,7 @@ import Landing from '../Landing/Landing';
 import Blog from '../Landing/Blog/Blog';
 import Post from '../Landing/Post/Post';
 import NotFound from '../NotFound/NotFound';
+import Logo from '../logo.svg';
 
 import SW from './App.swiss';
 import '../swiss/index';
@@ -13,8 +14,11 @@ export default function App() {
   return (
     <SW.Wrapper>
       <SW.NavBar>
-        <SW.Link to="/">Home</SW.Link>
-        <SW.Link to="/blog">Thoughts</SW.Link>
+        <SW.Link to="/">
+          <SW.Logo src={Logo} />
+        </SW.Link>
+        <SW.Link to="/">resume</SW.Link>
+        <SW.Link to="/blog">thoughts</SW.Link>
       </SW.NavBar>
       <Switch>
         <Route exact path="/" component={Landing} />

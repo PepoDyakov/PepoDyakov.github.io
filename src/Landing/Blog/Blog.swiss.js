@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default styleSheet('Blog', {
   Wrapper: {
-    width: '100%',
-    padding: '0 18px'
+    width: '100%'
   },
 
   LinkWrapper: {

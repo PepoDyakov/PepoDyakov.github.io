@@ -3,7 +3,7 @@ import { styleSheet } from 'swiss-react';
 export default styleSheet('Post', {
   Wrapper: {
     _flex: ['column', 'left', 'top'],
-    padding: '0 18px'
+    maxWidth: '740px'
   },
 
   Header: {
