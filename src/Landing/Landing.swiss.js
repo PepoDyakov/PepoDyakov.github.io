@@ -8,10 +8,16 @@ export default styleSheet('Landing', {
   },
 
   Row: {
+    _flex: ['column', 'left', 'top'],
+    marginBottom: '12px',
+    flexWrap: 'wrap'
+  },
+
+  RowTitle: {
+    _el: 'h1',
     _textStyle: 'H1',
     fontWeight: '$bold',
     marginBottom: '12px',
-    flexWrap: 'wrap',
 
     '@media screen and (max-width: 600px)': {
       _textStyle: 'H3',
@@ -19,10 +25,25 @@ export default styleSheet('Landing', {
     }
   },
 
+  RowText: {
+    _el: 'h1',
+    _textStyle: 'H1',
+    fontWeight: '$regular'
+  },
+
+  RowList: {
+    _el: 'ul'
+  },
+
+  RowListItem: {
+    _el: 'li'
+  },
+
   Span: {
     _el: 'span',
     _textStyle: 'H1',
     fontWeight: '$bold',
+    marginLeft: '6px',
     marginBottom: '12px',
     flexWrap: 'wrap',
 
@@ -35,9 +56,10 @@ export default styleSheet('Landing', {
   Link: {
     _el: 'a',
     _textStyle: 'H1',
-    fontWeight: '$bold',
-    marginLeft: '3px',
+    fontWeight: '$regular',
     textDecoration: 'underline',
+    padding: '6px 0',
+    color: get => `${get('color')}`,
 
     '&:hover': {
       cursor: 'pointer'
