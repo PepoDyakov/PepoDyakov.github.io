@@ -34,5 +34,12 @@ export default styleSheet('Post', {
     '@media screen and (max-width: 600px)': {
       _textStyle: 'H3'
     }
+  },
+
+  Date: {
+    _el: 'p',
+    _textStyle: 'H3',
+    fontWeight: '$bold',
+    marginBottom: '24px'
   }
 });

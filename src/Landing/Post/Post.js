@@ -9,6 +9,7 @@ export default function Post(props) {
       <SW.Title>{state.title}</SW.Title>
       <SW.Subtitle>{state.subtitle}</SW.Subtitle>
       <ReactMarkdown source={state.content} className="blog-post" />
+      <SW.Date>{state.date}</SW.Date>
     </SW.Wrapper>
   );
 }
