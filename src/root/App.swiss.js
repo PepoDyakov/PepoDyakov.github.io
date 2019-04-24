@@ -8,6 +8,7 @@ export default styleSheet('App', {
     overflowX: 'hidden',
     margin: '0 60px',
     minHeight: '100vh',
+    maxWidth: '1800px',
 
     '@media screen and (max-width: 600px)': {
       _size: ['calc(100% - 60px)', '100%'],

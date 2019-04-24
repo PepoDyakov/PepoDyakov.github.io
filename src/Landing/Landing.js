@@ -7,8 +7,8 @@ export default function Landing() {
       <SW.IntroWrapper>
         <SW.Title>Hi, I'm Petar Dyakov a.k.a Decho 👋</SW.Title>
         <SW.Subtitle>
-          I’m a software developer currently living in Sofia, Bulgaria 🇧🇬
-          Currently working as Chief Consistency Officer at{' '}
+          I’m a web developer currently living in Sofia, Bulgaria 🇧🇬 Currently
+          working as Chief Consistency Officer at{' '}
           <SW.Link href="https://swipesapp.com" color="green">
             Swipes
           </SW.Link>
@@ -23,6 +23,10 @@ export default function Landing() {
           or double-tap my photos on{' '}
           <SW.Link href="https://www.instagram.com/pepodyakov/" color="#c13584">
             Instagram
+          </SW.Link>
+          . And for the professionals here's my{' '}
+          <SW.Link href="https://app.enhancv.com/share/2e0b96a8?utm_medium=growth&utm_campaign=share-resume-download&utm_source=github">
+            CV
           </SW.Link>
           .
         </SW.Subtitle>
