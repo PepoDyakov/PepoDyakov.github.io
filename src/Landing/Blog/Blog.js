@@ -40,6 +40,7 @@ export default function Blog(props) {
           >
             <SW.LinkWrapper>
               <SW.Title>{p.fields.title}</SW.Title>
+              <SW.ReadMeText>Click to read</SW.ReadMeText>
             </SW.LinkWrapper>
           </SW.Link>
         );

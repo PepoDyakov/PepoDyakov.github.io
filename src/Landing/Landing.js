@@ -8,11 +8,7 @@ export default function Landing() {
         <SW.Title>Hi, I'm Petar Dyakov a.k.a Decho 👋</SW.Title>
         <SW.Subtitle>
           I’m a web developer currently living in Sofia, Bulgaria 🇧🇬 Currently
-          working as Chief Consistency Officer at{' '}
-          <SW.Link href="https://swipesapp.com" color="green">
-            Swipes
-          </SW.Link>
-          . You can follow me on{' '}
+          working as Front-end Developer. You can follow me on{' '}
           <SW.Link href="https://twitter.com/petardyakov" color="#55acee">
             Twitter
           </SW.Link>

@@ -6,41 +6,52 @@ export default styleSheet('Blog', {
     width: '100%'
   },
 
-  LinkWrapper: {
-    _flex: ['column', 'left', 'top'],
-    width: '100%',
-    marginBottom: '12px',
-
-    '@media screen and (max-width: 600px)': {
-      marginBottom: '0'
-    }
-  },
-
   Link: {
     _el: Link,
-    width: '100%'
+    _flex: ['row', 'left', 'center'],
+    _size: ['100%', '60px']
+  },
+
+  LinkWrapper: {
+    _flex: ['row', 'left', 'center'],
+
+    '&:hover': {
+      '& > .Blog_Title': {
+        cursor: 'pointer'
+      },
+
+      '& > .Blog_ReadMeText': {
+        opacity: '1',
+        visibility: 'visible',
+        transition: '.25s all ease-in-out'
+      }
+    }
   },
 
   Title: {
     _el: 'h1',
     _textStyle: 'H1',
-    width: '100%',
-    height: '48px',
     fontWeight: '$bold',
     textTransform: 'uppercase',
     backgroundColor: 'white',
-    zIndex: '5',
     wordBreak: 'break-word',
-
-    '&:hover': {
-      textDecoration: 'underline',
-      cursor: 'pointer'
-    },
 
     '@media screen and (max-width: 600px)': {
       _textStyle: 'H3',
       fontWeight: '$bold',
       height: '30px'
     }
+  },
+
+  ReadMeText: {
+    _el: 'p',
+    _textStyle: 'body',
+    marginLeft: '8px',
+    fontWeight: '$bold',
+    textTransform: 'uppercase',
+    flexShrink: '0',
+    opacity: '0',
+    visibility: 'hidden',
+    transition: '.25s all ease-in-out'
   }
 });

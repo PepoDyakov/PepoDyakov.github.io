@@ -17,7 +17,6 @@ export default function App() {
         <SW.Link to="/">
           <SW.Logo src={Logo} />
         </SW.Link>
-        <SW.Link to="/">resume</SW.Link>
         <SW.Link to="/blog">thoughts</SW.Link>
       </SW.NavBar>
       <Switch>

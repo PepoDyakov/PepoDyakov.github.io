@@ -3,12 +3,12 @@ import { NavLink } from 'react-router-dom';
 
 export default styleSheet('App', {
   Wrapper: {
-    _size: ['calc(100% - 120px)', '100%'],
+    _size: '100%',
     _flex: ['column', 'left', 'top'],
     overflowX: 'hidden',
-    margin: '0 60px',
+    margin: '0 auto',
     minHeight: '100vh',
-    maxWidth: '1800px',
+    maxWidth: '1000px',
 
     '@media screen and (max-width: 600px)': {
       _size: ['calc(100% - 60px)', '100%'],
@@ -31,13 +31,10 @@ export default styleSheet('App', {
   Link: {
     _el: NavLink,
     _textStyle: 'body',
-
-    '&:first-child': {
-      marginRight: 'auto'
-    },
+    fontWeight: 'bold',
 
     '&:not(:first-child)': {
-      marginRight: '18px'
+      marginLeft: '25px'
     },
 
     '&:hover': {
